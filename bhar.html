@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> body{
+        margin:0;
+        height:100vh;
+        background:black;
+    }
+        .moon{
+            position:absolute;
+            background: radial-gradient(circle at 40% 40%,#fdfdfd,#cfcfcf);
+            width: 120px;
+            height: 120px;
+            top:80px;
+            left:70px;
+            border-radius: 100%;
+            box-shadow:0 0 40px rgb(255,255,200);
+            animation: glow 5s ease-in-out infinite alternate;
+
+
+        }
+        @keyframes glow {
+            from{
+                box-shadow: 0 0 20px 10px rgb(255,255,200 0.4);
+            }
+            to{
+                box-shadow: 0 0 50px 20px rgb(255,255,200 0.5);
+            }
+        }
+        .star{
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background: rgb(237,234,234);
+            border-radius: 50%;
+             box-shadow:0 0 400px rgb(255,255,200);
+            animation: glow2 2s ease-in-out infinite alternate;
+        }
+        @keyframes glow2{
+            from{
+                opacity:0.2;
+                transform: scale(0.8);
+                to{
+                    opacity:1;
+                    transform: scale(1.2);
+                }
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="moon"></div>
+   
+    <div class="star" style="top:160px; left:150px"></div>
+    <div class="star" style="top:320px; left:200px"></div>
+ <div class="star" style="top:200px; left:100px"></div>
+  <div class="star" style="top:400px; left:300px"></div>
+ <div class="star" style="top:72px; left:350px"></div>
+  
+   
+    <div class="star" style="top:99px; left:400px"></div>
+    <div class="star" style="top:80px; left:500px"></div>
+    <div class="star" style="top:120px; left:600px"></div>
+    <div class="star" style="top:220px; left:800px"></div>
+    <div class="star" style="top:666px; left:500px"></div>
+    <div class="star" style="top:400px; left:500px"></div>
+    <div class="star" style="top:292px; left:400px"></div>
+    
+    <div class="star" style="top:50px; left:500px"></div>
+    <div class="star" style="top:333px; left:400px"></div>
+    <div class="star" style="top:400px; left:500px"></div>
+    
+    <div class="star" style="top:200px; left:400px"></div>
+    <div class="star" style="top:400px; left:400px"></div>
+    
+    <div class="star" style="top:400px; left:500px"></div>
+    <div class="star" style="top:88px; left:500px"></div>
+</body>
+</html>
